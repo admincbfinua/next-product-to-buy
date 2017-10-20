@@ -1,0 +1,6 @@
+Делюсь опытом создания маркетинговой рассылки Next product to buy проводимой с ПО Mailer
+В работу приходит база адеров со строками вида email;recieverName;Code1;Code2;Code3;Code4(Code - коды товаров, предлагаемые человеку для покупки, по ним и формируется картинка для вставки в письмо и отправки).
+Строка в шаблоне письма имеет такую вставку 
+<a href="https://www.bookclub.ua/catalog/product.html?code=%Code1%&amp;utm_source=email_mark_q3-17_id-1406&utm_medium=email&utm_campaign=email_mark_q3-17_id-1406_group-113-123-133-143-213-223-233-243_ksd-ua_lng-ru&utm_content=email_mark_q3-17_id-1406_date-20170904_count-25424&flcpartner=1406" title=""><img style="display:block;" border="0" src="https://www.bookclub.ua/.nptb/20171023/responce.php?lng=1&nptbimage=%Code1%" width="600" height="440" alt="" /></a>  и зовет скрипт с сервера отдающий сформированную картинку, а если такой нет, то вызывает скрипт для формирования оной.
+Перед проведением рассылки надо сформировать картинки, это делает index_makefiles.php
+Если что-то осталось не понятно или есть вопросы пишите сюда на сайт с пометкой админу https://cbf.in.ua или сюда skype: iskender_morales, буду рад помочь
